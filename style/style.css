@@ -1,0 +1,130 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gainsboro;
+  }
+
+  .wrapper .sidebar {
+    width: 20%;
+    aspect-ratio: 3/1;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+  }
+
+  .button {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    width: 7%;
+    aspect-ratio: 2 / 1;
+    margin: 1em;
+  }
+
+  .wrapper .button button {
+    padding: 0.2em;
+  }
+
+  .avatar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .content {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    max-width: 50ch;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+
+  .wrapper .sidebar {
+    width: 70%;
+    aspect-ratio: 3 / 1;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+  }
+
+  .search {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 15rem;
+    width: 100%;
+    height: 10%;
+    background-color: gainsboro;
+    z-index: 2;
+  }
+
+  .search input {
+    margin-left: 5%;
+    padding: 0.5rem;
+    width: 30%;
+  }
+
+  .content {
+    position: absolute;
+    top: 7rem;
+    left: 17rem;
+    max-width: 100ch;
+  }
+
+  .button {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    z-index: 100;
+  }
+
+  .avatar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+  }
+}
